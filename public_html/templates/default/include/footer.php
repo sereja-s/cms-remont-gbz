@@ -134,7 +134,7 @@
 			</div>
 			<div class="footer__subscribe subscribe">
 
-				<a href="<?= $this->alias() ?>" class="header__logo"><img src="<?= $this->img($this->set['img']) ?>" alt="<?= $this->set['name'] ?>"></a>
+				<a href="<?= $this->alias() ?>" class="header__logo">VSmotor</a>
 				<!-- <div class="subscribe__title _footer-title">Stay Updated</div>
 				<form data-message="subscribe" data-test action="#" class="subscribe__form">
 					<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" data-value="Enter your email" class="subscribe__input _req _email">
@@ -145,7 +145,7 @@
 	</div>
 </footer>
 </div>
-<div class="popup popup_popup">
+<!-- <div class="popup popup_popup">
 	<div class="popup__content">
 		<div class="popup__body">
 			<div class="popup__close"></div>
@@ -166,7 +166,7 @@
 			<div class="popup__video _video"></div>
 		</div>
 	</div>
-</div>
+</div> -->
 
 <!-- Swiper -->
 <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->

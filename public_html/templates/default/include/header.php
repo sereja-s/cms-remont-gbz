@@ -28,7 +28,7 @@
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
 
-	<title>Донспецстрой - pубероид в Донецке, Макеевке, Харцызске, ДНР | продаём стеклоизол, стеклокром, праймер битумный, мастика битумная, конёк оцинкованный</title>
+	<title><?= $this->set['name'] ?></title>
 
 	<?php $this->getStyles() ?>
 </head>

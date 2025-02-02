@@ -84,6 +84,7 @@ class Settings
 		/* 'catalog' => ['name' => 'Каталог (меню)'], */
 		//'filters' => ['name' => 'Фильтры'],
 		'goods' => ['name' => 'Процессы'],
+		'results_foto' => ['name' => 'Фотографии работ'],
 		'phones' => ['name' => 'Телефоны'],
 		'emails' => ['name' => 'Эл. почты'],
 		'address' => ['name' => 'Адреса'],

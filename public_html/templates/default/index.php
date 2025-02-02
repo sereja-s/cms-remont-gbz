@@ -14,17 +14,18 @@
 
 						<div class="slider-rooms__slide">
 							<div class="slider-rooms__image _ibg">
+
 								<img src="<?= $this->img($item['img']) ?>" alt="<?= $item['name'] ?>">
 
 							</div>
-							<a href="" data-swiper-parallax-opacity="0" data-swiper-parallax-y="-100%" class="slider-rooms__content _icon-arrow-link">
+							<div data-swiper-parallax-opacity="0" data-swiper-parallax-y="-100%" class="slider-rooms__content _icon-arrow-link">
 								<div class="slider-rooms__label label-slider">
 									<!-- <div class="label-slider__number"><?= $item['id'] ?></div>
 									<div class="label-slider__line"></div> -->
-									<div class="label-slider__text"><?= $item['name'] ?></div>
+									<div class="label-slider__text"><?= $item['short_content'] ?></div>
 								</div>
-								<div class="slider-rooms__title"><?= $item['sub_title'] ?></div>
-							</a>
+								<div class="slider-rooms__title"><?= $item['name'] ?></div>
+							</div>
 						</div>
 
 					<?php endforeach; ?>
@@ -100,54 +101,44 @@
 
 <?php endif; ?>
 
+<?php if (!empty($resultsFoto)) : ?>
 
-<section class="page__tips tips">
-	<div class="tips__container _container">
-		<h2 class="tips__title _title">Результаты нашей работы</h2>
-		<div class="tips__slider slider-tips">
-			<div class="slider-tips__body _swiper">
-				<div class="slider-tips__slide">
-					<a href="" class="slider-tips__image _ibg">
-						<picture>
-							<source srcset="<?= PATH . TEMPLATE ?>assets/img/tips/01.webp" type="image/webp"><img src="<?= PATH . TEMPLATE ?>assets/img/tips/01.jpg" alt="How to create a living room to love">
-						</picture>
-					</a>
-					<div class="slider-tips__content">
-						<a href="" class="slider-tips__title">How to create a living room to love</a>
-						<div class="slider-tips__text">20 jan 2020</div>
-					</div>
+	<section class="page__tips tips">
+		<div class="tips__container _container">
+			<h2 class="tips__title _title">Результаты нашей работы</h2>
+			<div class="tips__slider slider-tips">
+				<div class="slider-tips__body _swiper">
+
+					<?php foreach ($resultsFoto as $item) : ?>
+
+						<div class="slider-tips__slide">
+							<a href="" class="slider-tips__image _ibg">
+								<img src="<?= $this->img($item['img']) ?>" alt="<?= $item['name'] ?>">
+								<!-- <picture>
+								<source srcset="<?= PATH . TEMPLATE ?>assets/img/tips/02.webp" type="image/webp"><img src="<?= PATH . TEMPLATE ?>assets/img/tips/02.jpg" alt="Solution for clean look working space">
+							</picture> -->
+							</a>
+							<div class="slider-tips__content">
+								<a href="" class="slider-tips__title"><?= $item['name'] ?></a>
+								<div class="slider-tips__text" style="font-size: medium;"><?= $item['short_content'] ?></div>
+								<div class="slider-tips__text" style="color: teal;"><?= $item['date'] ?></div>
+							</div>
+						</div>
+
+					<?php endforeach; ?>
+
 				</div>
-				<div class="slider-tips__slide">
-					<a href="" class="slider-tips__image _ibg">
-						<picture>
-							<source srcset="<?= PATH . TEMPLATE ?>assets/img/tips/02.webp" type="image/webp"><img src="<?= PATH . TEMPLATE ?>assets/img/tips/02.jpg" alt="Solution for clean look working space">
-						</picture>
-					</a>
-					<div class="slider-tips__content">
-						<a href="" class="slider-tips__title">Solution for clean look working space</a>
-						<div class="slider-tips__text">10 jan 2020</div>
-					</div>
+				<div class="slider-tips__dotts"></div>
+				<div class="slider-tips__arrows slider-arrows">
+					<button type="button" class="slider-arrow slider-arrow_white slider-arrow_prev _icon-arrow-down"></button>
+					<button type="button" class="slider-arrow slider-arrow_white slider-arrow_next _icon-arrow-down"></button>
 				</div>
-				<div class="slider-tips__slide">
-					<a href="" class="slider-tips__image _ibg">
-						<picture>
-							<source srcset="<?= PATH . TEMPLATE ?>assets/img/tips/03.webp" type="image/webp"><img src="<?= PATH . TEMPLATE ?>assets/img/tips/03.jpg" alt="Make your cooking activity more fun with good setup">
-						</picture>
-					</a>
-					<div class="slider-tips__content">
-						<a href="" class="slider-tips__title">Make your cooking activity more fun with good setup</a>
-						<div class="slider-tips__text">20 jan 2020</div>
-					</div>
-				</div>
-			</div>
-			<div class="slider-tips__dotts"></div>
-			<div class="slider-tips__arrows slider-arrows">
-				<button type="button" class="slider-arrow slider-arrow_white slider-arrow_prev _icon-arrow-down"></button>
-				<button type="button" class="slider-arrow slider-arrow_white slider-arrow_next _icon-arrow-down"></button>
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
+
+<?php endif; ?>
+
 <!-- <section class="page__furniture furniture">
 	<div class="furniture__container">
 		<div class="furniture__label">Share your setup with</div>

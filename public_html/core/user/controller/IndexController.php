@@ -33,6 +33,11 @@ class IndexController extends BaseUser
 			'order_direction' => ['DESC'],
 			'limit' => 3
 		]);
+		$resultsFoto = $this->model->get('results_foto', [
+			'where' => ['visible' => 1],
+			'order' => ['menu_position'],
+			'limit' => 20
+		]);
 		// процессы
 		$goods = $this->model->get('goods', [
 			'where' => ['visible' => 1],
@@ -40,6 +45,6 @@ class IndexController extends BaseUser
 		]);
 
 		// собираем переменные в массив и возвращаем в шаблон, что бы они стали доступными при выводе
-		return compact('sales', "priceTable", 'arrHits', 'goods', 'advantages', 'news');
+		return compact('sales', "priceTable", 'arrHits', 'goods', 'advantages', 'news', 'resultsFoto');
 	}
 }

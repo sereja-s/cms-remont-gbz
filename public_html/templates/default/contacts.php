@@ -5,10 +5,10 @@
 
 		<div class="contacts-page__wrapper">
 			<div class="contacts-page__category">
-				<h2 class="contacts-page__category-title">Отдел продаж</h2>
+				<!-- <h2 class="contacts-page__category-title">Отдел продаж</h2> -->
 
 				<div class="contacts-page__item">
-					<h3 class="contacts-page__item-title"><img class="contacts-page__item-img" src="img/icons/contacts-icon-calen.svg" alt=""><span>График работы отдела продаж</span></h3>
+					<h3 class="contacts-page__item-title"><img class="contacts-page__item-img" src="img/icons/contacts-icon-calen.svg" alt=""><span>График работы</span></h3>
 
 					<div class="contacts-page__item-text">
 						<p>7:00 - 16:00 (пн-пт)</p>
@@ -120,7 +120,7 @@
 
 						<?php foreach ($this->socials as $item) : ?>
 
-							<li><a href="<?= $this->alias($item['external_alias']) ?>" class="menu-footer__link"><?= $item['name'] ?> <img src="<?= $this->img($item['img']) ?>" alt="<?= $item['name'] ?>"></a></li>
+							<li><a href="<?= $this->alias($item['external_alias']) ?>" class="menu-footer__link"><?= $item['name'] ?> <!-- <img src="<?= $this->img($item['img']) ?>" alt="<?= $item['name'] ?>"> --></a></li>
 
 						<?php endforeach; ?>
 

@@ -631,7 +631,7 @@ textarea.input {
 }
 
 ._title {
-	font-size: 40px;
+	font-size: 36px;
 	font-weight: 700;
 	line-height: 120%;
 	text-align: center;
@@ -3262,7 +3262,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 	height: 100%;
 	width: 100vw;
 	left: 0;
-	background-color: #fcf8f3;
+	background-color: #e0ddd2;
 	z-index: 2;
 	-webkit-transform: translate(-100%, 0px);
 	-ms-transform: translate(-100%, 0px);
@@ -3293,7 +3293,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 	max-width: 240px;
 	left: 24px;
 	bottom: 24px;
-	padding: 32px;
+	padding: 15px;
 	background: rgba(255, 255, 255, 0.9);
 	/* Если браузер поддерживает backdrop-filter */
 }
@@ -3330,7 +3330,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .slider-rooms__title {
 	font-weight: 600;
-	font-size: 28px;
+	font-size: 24px;
 }
 
 .slider-rooms__arrows {
@@ -3351,6 +3351,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .label-slider {
 	display: -ms-grid;
 	display: grid;
+	font-size: 18px;
 	color: #616161;
 	gap: 8px;
 	-webkit-box-align: center;
@@ -3359,8 +3360,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 	-webkit-box-pack: start;
 	-ms-flex-pack: start;
 	justify-content: start;
-	-ms-grid-columns: auto 27px auto;
-	grid-template-columns: auto 27px auto;
+	/* -ms-grid-columns: auto 15px auto;
+	grid-template-columns: auto 15px auto; */
 }
 
 .label-slider:not(:last-child) {
@@ -3437,7 +3438,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .slider-tips__title:not(:last-child) {
-	margin: 0px 0px 0.3333333333em 0px;
+	margin: 0px 0px 0.2em 0px;
+	/* margin: 0px 0px 0.3333333333em 0px; */
 }
 
 .slider-tips__text {
@@ -3781,7 +3783,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 @media (max-width: 1270px) {
 	._title {
-		font-size: calc(24px + 16 * ((100vw - 320px) / 950));
+		font-size: calc(20px + 16 * ((100vw - 320px) / 950));
 	}
 
 	._footer-title {
@@ -3919,7 +3921,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 	}
 
 	.slider-rooms__title {
-		font-size: calc(24px + 4 * ((100vw - 320px) / 950));
+		font-size: calc(22px + 4 * ((100vw - 320px) / 950));
 	}
 
 	.tips {
@@ -4072,7 +4074,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 		overflow: auto;
 		top: 0;
 		left: -100%;
-		background-color: #fcf8f3;
+		background-color: #e0ddd2;
 		-webkit-transition: left 0.3s ease 0s;
 		-o-transition: left 0.3s ease 0s;
 		transition: left 0.3s ease 0s;

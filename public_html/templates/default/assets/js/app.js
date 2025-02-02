@@ -262,6 +262,9 @@ if (document.querySelector('.slider-rooms__body')) {
 		spaceBetween: 24,
 		speed: 800,
 		loop: true,
+		autoplay: {
+			delay: 7000,
+		},
 		watchOverflow: true,
 		loopAdditionalSlides: 5,
 		preloadImages: false,
