@@ -4888,3 +4888,29 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 	display: block;
 	width: 100%;
 }
+
+/* ====================================================== footer__copyright ============================================ */
+
+.footer__copyright {
+	border-top: 1px solid #e5e5e5;
+	padding: 18px 40px;
+}
+
+@media (max-width: 425px) {
+	.footer__copyright {
+		padding: 15px;
+	}
+}
+
+.footer__copyright-text {
+	text-align: center;
+	font-size: 13px;
+	line-height: 18px;
+	color: #404040;
+}
+
+.footer__props {
+	font-size: 15px;
+	line-height: 25px;
+	color: #404040;	
+}

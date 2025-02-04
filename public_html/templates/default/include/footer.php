@@ -143,6 +143,21 @@
 			</div>
 		</div>
 	</div>
+	<div class="footer__copyright">
+		<div class="_container">
+			<p class="footer__copyright-text">Обращаем Ваше внимание на то, что данный интернет-сайт носит
+				исключительно информационный характер и ни при каких условиях информационные материалы
+				и цены,
+				размещенные на сайте, не являются публичной офертой, определяемой положениями
+				Гражданского кодекса РФ
+			</p>
+			<div class="footer__props" style="text-align: center;">
+				<div><?= date('Y') ?> г.</div><br>
+				<span style="padding-right: 5px;">сделано в</span>
+				<a href="<?= $this->set['external_alias'] ?>">САЙТ ПОСТРОЕН</a>
+			</div>
+		</div>
+	</div>
 </footer>
 </div>
 <!-- <div class="popup popup_popup">

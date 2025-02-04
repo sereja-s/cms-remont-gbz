@@ -11,24 +11,24 @@
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<meta name="description" content="<?= $this->set['description'] ?>">
+	<meta name="description" content="<?= $this->set['description'] ?> <?= $this->set['phone'] ?> <?= $this->set['address'] ?>">
 	<meta name="keywords" content="<?= $this->set['keywords'] ?>">
 
-	<meta property="og:title" content="<?= $this->set['name'] ?>" />
-	<meta property="og:description" content="<?= $this->set['description'] ?>" />
+	<meta property="og:title" content="<?= $this->set['title'] ?>" />
+	<meta property="og:description" content="<?= $this->set['description'] ?> <?= $this->set['phone'] ?> <?= $this->set['address'] ?>" />
 	<meta property="og:image" content="<?= $this->img($this->set['main_img']) ?>" />
 
-	<link rel="icon" href="https://dss-krovlya.ru/favicon.ico" type="image/x-icon">
 
-	<link rel="apple-touch-icon" sizes="180x180" href="https://dss-krovlya.ru/favicon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="https://dss-krovlya.ru/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="https://dss-krovlya.ru/favicon/favicon-16x16.png">
-	<link rel="manifest" href="https://dss-krovlya.ru/favicon/site.webmanifest">
-	<link rel="mask-icon" href="https://dss-krovlya.ru/favicon/safari-pinned-tab.svg" color="#5bbad5">
-	<meta name="msapplication-TileColor" content="#da532c">
-	<meta name="theme-color" content="#ffffff">
 
-	<title><?= $this->set['name'] ?></title>
+	<link rel="icon" href="<?= SITE_URL ?>/favicon.ico" type="image/x-icon">
+
+	<link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+	<link rel="shortcut icon" href="/favicon/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+	<link rel="manifest" href="/favicon/site.webmanifest" />
+
+	<title><?= $this->set['title'] ?></title>
 
 	<?php $this->getStyles() ?>
 </head>
@@ -41,7 +41,7 @@
 					<div class="header__body">
 						<div class="header__main">
 							<a href="<?= $this->alias() ?>" class="header__logo">VSmotor</a>
-							<!-- <a href="<?= $this->alias() ?>" class="header__logo"><img src="<?= $this->img($this->set['img']) ?>" alt="<?= $this->set['name'] ?>"></a> -->
+
 							<div class="header__menu menu">
 								<nav class="menu__body">
 									<ul data-spollers="768,max" class="menu__list">

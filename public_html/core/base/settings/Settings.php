@@ -106,8 +106,8 @@ class Settings
 	// свойство: массив шаблонов
 	private $templateArr = [
 		// массив вида: 'название шаблона' => массив с полями для которых должен быть подключен соответствующий шаблон
-		'text' => ['name', 'phone', 'email', 'alias', 'external_alias', 'sub_title', 'number_of_years', 'number', 'discount', 'price', 'price_auto', 'price_gruzauto', 'price_m_opt', 'login', 'password'],
-		'textarea' => ['content', 'keywords', 'address', 'description', 'short_content'],
+		'text' => ['name', 'phone', 'email', 'title', 'alias', 'external_alias', 'sub_title', 'number_of_years', 'number', 'discount', 'price', 'price_auto', 'price_gruzauto', 'price_m_opt', 'login', 'password'],
+		'textarea' => ['content', 'keywords', 'address', 'working_time', 'description', 'short_content'],
 		'radio' => ['visible', 'show_top_menu', 'hit', 'new'/*'sale', 'hot'*/],
 		'checkboxlist' => ['filters', 'filters_test'], // указали, что хотим подключить фильтры к связанной таблице: 
 		// товары (они прописаны в массиве: в свойстве: private $manyToMany)
@@ -129,6 +129,7 @@ class Settings
 		'phone' => ['Телефон'],
 		'email' => ['Электронная почта'],
 		'address' => ['Адрес'],
+		'working_time' => ['График работы'],
 		'alias' => ['Ссылка ЧПУ'],
 		'external_alias' => ['Внешняя ссылка'],
 		'img' => ['Изображение', '(Одно)'],

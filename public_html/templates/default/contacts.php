@@ -11,16 +11,15 @@
 					<h3 class="contacts-page__item-title"><img class="contacts-page__item-img" src="img/icons/contacts-icon-calen.svg" alt=""><span>График работы</span></h3>
 
 					<div class="contacts-page__item-text">
-						<p>7:00 - 16:00 (пн-пт)</p>
-						<p>7:00 - 16:00 (сб-вс)</p>
-						<p><b></b></p>
+						<?= $this->set['working_time'] ?>
+
 					</div>
 				</div>
 
 				<div class="contacts-page__item">
 					<h3 class="contacts-page__item-title">
 						<img class="contacts-page__item-img" src="img/icons/contacts-icon-phone.svg" alt="">
-						<span>Телефоны</span>
+						<span>Телефон</span>
 						<!-- <a href="#"><img class="contacts-page__item-img" src="<?= PATH . TEMPLATE ?>/assets/img/icons/viber.svg" alt="viber"></a>
 						<a href="#"><img class="contacts-page__item-img" src="<?= PATH . TEMPLATE ?>/assets/img/icons/telegram.svg" alt="telegram"></a> -->
 					</h3>
@@ -68,18 +67,18 @@
 
 					<?php endif; ?>
 
-					<div class="contacts-page__item-text">
+					<!-- <div class="contacts-page__item-text">
 						<a href="mailto:info@elecity.ru"></a>
-					</div>
+					</div> -->
 				</div>
 
-				<div class="contacts-page__item">
+				<!-- <div class="contacts-page__item">
 					<h3 class="contacts-page__item-title"><img class="contacts-page__item-img" src="img/icons/contacts-icon-invo.svg" alt=""><span></span></h3>
 
 					<div class="contacts-page__item-text">
 						<p><a href="mailto:bn@elecity.ru"></a></p>
 					</div>
-				</div>
+				</div> -->
 			</div>
 
 			<div class="contacts-page__category">

@@ -39,7 +39,7 @@
 		<div class="item-product__body">
 			<div class="item-product__content">
 				<h3 class="item-product__title"><?= $data['name'] ?></h3>
-				<div class="item-product__text"><?= $data['short_content'] ?></div>
+				<div class="item-product__text" style="color: teal;"><?= $data['short_content'] ?></div>
 				<div class="item-product__text"><?= $data['content'] ?></div>
 
 				<!-- <div class="item-product__text">Цена:</div> -->
