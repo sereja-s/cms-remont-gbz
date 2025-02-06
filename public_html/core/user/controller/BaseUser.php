@@ -89,11 +89,6 @@ abstract class BaseUser extends \core\base\controller\BaseController
 			$this->getCartData();
 		}
 
-		// получим в св-во: $this->menu, в ячейку: ['catalog'], то что хранится в соответствующей таблице БД
-		$this->menu['catalog'] = $this->model->get('catalog', [
-			'where' => ['visible' => 1, 'parent_id' => null],
-			'order' => ['menu_position']
-		]);
 
 		// получим в св-во: $this->menu, в ячейку: ['information'], то что хранится в соответствующей таблице БД
 		$this->menu['information'] = $this->model->get('information', [

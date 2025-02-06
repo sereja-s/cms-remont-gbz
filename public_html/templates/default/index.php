@@ -1,4 +1,4 @@
-<section class="page__rooms rooms" style="">
+<section class="page__rooms rooms">
 	<div class="rooms__container _container">
 		<div class="rooms__body">
 			<h2 class="rooms__title _title"><?= $this->set['name'] ?></h2>

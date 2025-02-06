@@ -26,13 +26,7 @@ class IndexController extends BaseUser
 			'order' => ['menu_position'],
 		]);
 
-		// Выпуск №128 | Вывод новостей
-		$news = $this->model->get('news', [
-			'where' => ['visible' => 1],
-			'order' => ['date'],
-			'order_direction' => ['DESC'],
-			'limit' => 3
-		]);
+
 		$resultsFoto = $this->model->get('results_foto', [
 			'where' => ['visible' => 1],
 			'order' => ['menu_position'],
